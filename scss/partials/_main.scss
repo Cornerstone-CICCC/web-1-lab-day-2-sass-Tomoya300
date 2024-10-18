@@ -1,0 +1,63 @@
+main {
+    margin-top: 80px;
+    font-family: 'Times New Roman', Times, serif;
+    width: 100%;
+
+    h2 {
+        background-color: rgb(29, 244, 172);
+        position: sticky;
+        top: 69px;
+        width: 100%;
+        z-index: 100;
+    }
+
+    p {
+        width: 90vw;
+    }
+    
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        img {
+            width: 100%;
+        }
+    }
+
+    .fruit-hover {
+
+        figure {
+            margin: 0;
+            position: relative;
+            width: fit-content;
+
+            figcaption {
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-color: red;
+                color: white;
+                opacity: 0;
+            }
+        }
+        
+        img {
+            width: 50vw;
+            height: 600px;
+        }
+
+        figure:hover figcaption {
+            opacity: 1;
+        }
+    }
+
+    .back-to-top-btn {
+        background-color: black;
+        position: fixed;
+        right:0;
+        bottom: 0;
+        padding: 5px 5px 5px 5px;
+        a {
+            color: white;
+        }
+    }
+}

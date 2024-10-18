@@ -1,0 +1,90 @@
+header {
+  background-color: white;
+  width: 100%;
+  top: 0;
+  position: fixed;
+  font-family: "Times New Roman", Times, serif;
+  z-index: 9999;
+}
+header .logo {
+  padding-top: 5px;
+}
+header nav ul {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: flex-start;
+}
+header nav ul li {
+  padding: 0 5px;
+}
+header nav ul li:first-child {
+  padding-left: 0;
+}
+
+main {
+  margin-top: 80px;
+  font-family: "Times New Roman", Times, serif;
+  width: 100%;
+}
+main h2 {
+  background-color: rgb(29, 244, 172);
+  position: sticky;
+  top: 69px;
+  width: 100%;
+  z-index: 100;
+}
+main p {
+  width: 90vw;
+}
+main .gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+main .gallery img {
+  width: 100%;
+}
+main .fruit-hover figure {
+  margin: 0;
+  position: relative;
+  width: fit-content;
+}
+main .fruit-hover figure figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: red;
+  color: white;
+  opacity: 0;
+}
+main .fruit-hover img {
+  width: 50vw;
+  height: 600px;
+}
+main .fruit-hover figure:hover figcaption {
+  opacity: 1;
+}
+main .back-to-top-btn {
+  background-color: black;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  padding: 5px 5px 5px 5px;
+}
+main .back-to-top-btn a {
+  color: white;
+}
+
+footer {
+  font-family: "Times New Roman", Times, serif;
+}
+
+body {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding: 5px;
+}
+
+/*# sourceMappingURL=style.css.map */
